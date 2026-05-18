@@ -1236,7 +1236,7 @@ Guru Kelas menggunakan aplikasi ini untuk memantau absensi kelas yang menjadi ta
                 document.getElementById('btn-submit-login').innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Memproses...`;
                 
                 if (r === 'admin') {
-                    if (u === 'supriyadi' && p === '291188') { STATE.user = { username: u, role: 'Admin TU', isAdmin: true, fullFeature: true }; localStorage.setItem('session', JSON.stringify(STATE.user)); loadData().then(initApp); } 
+                    if (u === 'admin123!@#' && p === 'minda123!@#') { STATE.user = { username: u, role: 'Admin TU', isAdmin: true, fullFeature: true }; localStorage.setItem('session', JSON.stringify(STATE.user)); loadData().then(initApp); } 
                     else { showToast('Kredensial Admin salah!', 'error'); document.getElementById('btn-submit-login').innerHTML = `Masuk Ke Sistem`; }
                 } else {
                     loadData().then(() => {
